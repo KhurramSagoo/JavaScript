@@ -64,11 +64,68 @@ const newArray = mapNumbers.map(updated)
 function updated(n){
 
     return n*15
+    
 }
 console.log(newArray);
 
+// map an other method 
+const nmapNumbers = [ 1,2,3,5,4];
+const nnewArray = nmapNumbers.map((n) => n*12);
 
 
+console.log(nnewArray);
+
+// // map an other one
+// const mmapNumbers = [ 1,2,3,5,4];
+// const mnewArray = nmapNumbers.map((n) => n*12);
+// const users=[
+//     {name: "Farhan" , country:"USA"},
+//     {name:"Aslam", country:"Pakistan" },
+//     {name:"Ali", country:"KSA" },
+//     {name:"Waqar", country:"UK" },
+// ]
+
+// const country= users.map(user=>user.country)
+// const nameArray= users.map(user=>user.name)
+// console.log(country,nameArray)
 
 
+const mmapNumbers = [ 1,2,3,5,4];
+const mnewArray = nmapNumbers.map((n) => n*12);
+
+
+// map on condition and ternary operation
+const users=[
+    {name: "Farhan" , country:"USA"},
+    {name:"Aslam", country:"Pakistan" },
+    {name:"Ali", country:"KSA" },
+    {name:"Waqar", country:"UK" },
+]
+
+const country= users.map(user=>user.country)
+const nameArray= users.map(user=>user.name==="Farhan"? "Khurram":user.name)
+// "?" is used for true and ":" used for false.
+console.log(country,nameArray)
+
+
+// get the index of current item
+const nusers=[
+    {name: "Farhan" , country:"USA"},
+    {name:"Aslam", country:"Pakistan" },
+    {name:"Ali", country:"KSA" },
+    {name:"Waqar", country:"UK" },
+]
+// here get the index of 2nd parameter
+const ncountry= nusers.map(user=>user.country)
+const nnameArray= nusers.map((user,index)=>
+index!== 2? user.name : "new name");
+// "?" is used for true and ":" used for false.
+console.log(ncountry,nnameArray)
+
+
+// conclusion Map Method
+// used to update an array
+// and fetch array from existing array
+// but remember always return new array , it will not change original array
+// map is not same as for-each loop. it works for each item/element
 
