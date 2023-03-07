@@ -50,5 +50,25 @@ numbers.forEach((value, index) => {
 //     console.log(numbers[i]);
 // }
 
+// for each short cut method
+
+numbers.forEach(value => {
+    console.log(value)
+    
+});
+
+
+// map method
+const mapNumbers = [ 1,2,3,5,4];
+const newArray = mapNumbers.map(updated)
+function updated(n){
+
+    return n*15
+}
+console.log(newArray);
+
+
+
+
 
 
